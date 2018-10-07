@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+echo "Set local variables before start Worker"
+#echo "don't forget this command: chmod +x set_locals.sh"
+
+export AKKA_SEED_NODES='localhost:2551,localhost:2552'
+echo "AKKA_SEED_NODES=$AKKA_SEED_NODES"
+
+export AKKA_REMOTING_BIND_HOST='localhost'
+echo "AKKA_REMOTING_BIND_HOST=$AKKA_REMOTING_BIND_HOST"
+
+export AKKA_REMOTING_BIND_PORT='22551'
+echo "AKKA_REMOTING_BIND_PORT=$AKKA_REMOTING_BIND_PORT"
+
+export AKKA_ACTOR_SYSTEM_NAME='FileIOClusterSystem'
+echo "AKKA_ACTOR_SYSTEM_NAME=$AKKA_ACTOR_SYSTEM_NAME"
+
+
+
+export WEBSERVER_ADDRESS='0.0.0.0'
+echo "WEBSERVER_ADDRESS=$WEBSERVER_ADDRESS"
+
+export WEBSERVER_PORT=8102
+echo "WEBSERVER_PORT=$WEBSERVER_PORT"
+
+
+
+export FILESYSTEM_PATH='/Users/kazbek/tmp/fs'
+echo "FILESYSTEM_PATH=$FILESYSTEM_PATH"
+
+
+export KAMON_STATSD_HOSTNAME='127.0.0.1'
+echo "KAMON_STATSD_HOSTNAME=$KAMON_STATSD_HOSTNAME"
+
+export KAMON_STATSD_PORT=8125
+echo "KAMON_STATSD_PORT=$KAMON_STATSD_PORT"
+
+
+export FILE_IO_PREFIX='http://localhost:8102'
+echo "FILE_IO_PREFIX=$FILE_IO_PREFIX"
