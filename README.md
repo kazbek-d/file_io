@@ -1,0 +1,1 @@
+To learn more about this project, read [the wiki](https://gitlab.com/kazbek/file_io/wikis/home).
